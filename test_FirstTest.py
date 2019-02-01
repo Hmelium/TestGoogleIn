@@ -36,7 +36,7 @@ class test_FirstTest(unittest.TestCase):
             nextbut.click()
             time.sleep(1)
             try:
-                self.driver.find_element_by_xpath("//div[contains(text(), 'Не вдалоfся знайти ваш обліковий запис Google')]")
+                self.driver.find_element_by_xpath("//div[contains(text(), 'Не вдалося знайти ваш обліковий запис Google')]")
             except NoSuchElementException:
                 print('Test fall')
                 return False
